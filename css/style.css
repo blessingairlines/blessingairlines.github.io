@@ -1,3 +1,8 @@
+:root {
+	--side_padding: 22%;
+	--text-black: #303030;
+}
+
 header {
 	background-color: #ffffff;
 	height: 90px;
@@ -5,12 +10,13 @@ header {
 
 .header_1, .header_2 {
 	display: flex;
-	padding: 0 15%;
+	padding: 0 var(--side_padding);
 }
 
 .header_1 {
 	height: 55px;
 }
+
 
 .header_1 a img {
 	margin-top: 5px;
@@ -33,7 +39,7 @@ header {
 
 .header_2 p a {
 	text-decoration: none;
-	color: #2e4473;
+	color: var(--text-black);
 }
 
 .header_2 p a:hover {
@@ -46,6 +52,7 @@ img	{
 
 body {
 	margin: 0;
+	color: var(--text-black);
 }
 
 .top-img {
@@ -55,7 +62,7 @@ body {
 }
 
 .notification {
-	padding: 0 15%;
+	padding: 0 var(--side_padding);
 	height: 40px;
 	background-color: #fdd;
 	border-left: solid 8px red;
@@ -69,7 +76,7 @@ body {
 }
 
 p {
-	color: #2e4473;
+	color: var(--text-black);
 }
 
 .notification_message::before {
@@ -83,7 +90,7 @@ p {
 }
 
 .contents_area {
-	padding: 0 15%;
+	padding: 0 var(--side_padding);
 	/*width: 950px;*/
 	margin: auto;
 }
@@ -101,11 +108,15 @@ p {
 }
 
 .page_title h2 {
-	padding: 0 15%;
+	padding: 0 var(--side_padding);
 	/*max-width: 950px;*/
 	/*padding: 0;*/
 	margin: auto;
 	padding-block: 17px;
+}
+
+.page_content {
+	font-size: 0.9rem;
 }
 
 .bread_crambs_wrap {
@@ -116,7 +127,7 @@ p {
 }
 
 .bread_crambs {
-	padding: 0 15%;
+	padding: 0 var(--side_padding);
 	/*width: 950px;*/
 	margin: 0 auto;
 	padding-block: 5px;
